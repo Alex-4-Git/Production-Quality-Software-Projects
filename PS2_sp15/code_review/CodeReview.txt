@@ -1,0 +1,14 @@
+Please enter your code review in this file as plain text
+and make sure to include it when you commit your project.
+
+Overally, the design is good. My suggestions are as follows: 
+
+1 The addressbook is implemented by a TreeSet. It is easy to manage but the problem is it can not contain 2 entries exactly the same. I am not sure if it is a problem, but in my phone I can save 2 same contacts.
+
+2 The member variables of Entry are set as final, so users can not make changes on it. It is not very reasonable.
+
+3 User can only save one email for one contact
+
+4 The function searchEntryies can not search part of the filed. If a user only remeber the last name of a contact he cna not find it by this functionality.
+
+
